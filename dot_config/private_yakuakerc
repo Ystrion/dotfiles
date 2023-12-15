@@ -1,0 +1,16 @@
+[Appearance]
+Translucency=true
+
+[Dialogs]
+FirstRun=false
+
+[Notification Messages]
+hinding_title_bar=false
+
+[Window]
+Height=100
+KeepOpen=false
+ShowSystrayIcon=false
+ShowTabBar=false
+ShowTitleBar=false
+Width=100

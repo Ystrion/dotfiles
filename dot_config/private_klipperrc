@@ -1,0 +1,6 @@
+[General]
+ActionsInfoMessageShown=false
+KeepClipboardContents=false
+MaxClipItems=100
+SelectionTextOnly=false
+Version=5.27.6

@@ -1,0 +1,16 @@
+[General]
+ActivityAware=false
+FreeFloating=true
+HistoryEnabled=false
+RetainPriorSearch=false
+
+[PlasmaRunnerManager]
+migrated=true
+
+[Plugins]
+appstreamEnabled=false
+baloosearchEnabled=true
+katesessionsEnabled=false
+konsoleprofilesEnabled=false
+org.kde.activities2Enabled=false
+recentdocumentsEnabled=false

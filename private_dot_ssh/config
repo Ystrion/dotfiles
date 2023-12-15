@@ -1,0 +1,5 @@
+Host vm
+  HostName 192.168.122.228
+Host vps
+  HostName 51.38.227.239
+  User debian

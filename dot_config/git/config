@@ -1,0 +1,28 @@
+[advice]
+  detachedHead = false
+[commit]
+  gpgsign = true
+[core]
+  excludesFile = ~/.config/git/ignore
+  pager = delta
+[delta]
+  navigate = true
+  light = false
+  line-numbers = true
+[diff]
+  colorMoved = default
+[fetch]
+  prune = true
+[init]
+  defaultBranch = main
+[interactive]
+  diffFilter = delta --color-only
+[merge]
+  conflictstyle = diff3
+[push]
+  autoSetupRemote = true
+  default = current
+[user]
+  name = Léo DEVILLE
+  email = 140350428+Ystrion@users.noreply.github.com
+  signingkey = B58EA888942049E91A884E963FDB01B6BEDFB799

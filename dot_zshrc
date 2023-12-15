@@ -1,0 +1,50 @@
+# Oh My Zsh
+export NVM_DIR="$HOME/.local/share/nvm"
+export ZSH="$HOME/.local/share/oh-my-zsh"
+export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
+export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern regexp)
+export ZSH_TMUX_CONFIG="$HOME/.config/tmux/tmux.conf"
+export ZSH_TMUX_AUTOSTART=true
+
+typeset -A ZSH_HIGHLIGHT_STYLES
+
+ZSH_HIGHLIGHT_STYLES[path]='fg=blue,bold'
+
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+zstyle ':omz:update' mode disabled
+
+mkdir -p "$HOME/.cache/pip"
+
+plugins=(autopep8 colored-man-pages command-not-found composer dotenv fd fzf fzf-tab gpg-agent grc httpie npm pep8 pip pylint ripgrep rust ssh-agent starship sudo tmux urltools warhol web-search zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode)
+
+source "$ZSH/oh-my-zsh.sh"
+
+export PATH="$PATH:$HOME/.local/bin"
+
+# Aliases
+alias la='ls -a'
+alias ls='eza --classify --group-directories-first --icons=auto'
+alias nvim='nvim -i NONE'
+alias orphans='paru -Qtd'
+alias rmlog='fd --hidden --extension log --exec rm "{}"'
+alias sudo='sudo '
+alias vi='nvim'
+alias vim='nvim'
+
+# zsh
+unset HISTFILE
+
+# Cargo
+export CARGO_HOME="$HOME/.local/share/cargo"
+export PATH="$PATH:$CARGO_HOME/bin"
+
+# Go
+export GOPATH="$HOME/.local/share/go"
+
+# less
+export LESSHISTFILE=-
+
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# npm
+export NPM_CONFIG_USERCONFIG="$HOME/.config/npm/npmrc"
